@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>燃烧我的卡路里</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      background: linear-gradient(155deg, #e8efe4 0%, #d8e8f6 35%, #e8daf4 100%);
+      color: #333;
+    }
+    .container {
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+    p { color: #666; margin-bottom: 1rem; }
+    a {
+      color: #A3B899;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border: 2px solid #A3B899;
+      border-radius: 8px;
+      transition: all 0.2s;
+    }
+    a:hover {
+      background: #A3B899;
+      color: white;
+    }
+  </style>
+  <script>
+    // GitHub Pages SPA fallback: 将当前路径重定向到 index.html
+    // 这样客户端路由可以接管并显示正确页面
+    (function() {
+      var basePath = '/calorie-tracker/';
+      var pathname = window.location.pathname;
+
+      // 如果路径在 base 下且不是 index.html，重定向到根路径
+      if (pathname.startsWith(basePath) && pathname !== basePath && !pathname.endsWith('.html')) {
+        window.location.replace(basePath);
+      }
+    })();
+  </script>
+</head>
+<body>
+  <div class="container">
+    <h1>页面未找到</h1>
+    <p>正在尝试加载应用...</p>
+    <a href="/calorie-tracker/">返回首页</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="燃烧我的卡路里 - 科学管理你的热量" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#A3B899" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content" />
+
+    <!-- 资源加载优化 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://wsrv.nl" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="dns-prefetch" href="https://api.github.com" />
+
+    <!-- iOS PWA 支持 -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="卡路里" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+    <title>燃烧我的卡路里</title>
+    <script type="module" crossorigin src="/assets/index-Br0fMEtN.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DQtzZES0.css">
+  </head>
+  <body>
+    <script>
+      (function(){try{var d=localStorage.getItem('calorie-theme');var p=window.matchMedia('(prefers-color-scheme: dark)');var isDark=d==='dark'||(!d&&p.matches);if(isDark)document.documentElement.classList.add('dark');p.addEventListener('change',function(e){if(!localStorage.getItem('calorie-theme'))document.documentElement.classList.toggle('dark',e.matches)});}catch(e){}}());
+    </script>
+    <svg style="display: none;">
+      <defs>
+        <filter id="liquid-distort" x="-10%" y="-10%" width="120%" height="120%">
+          <feTurbulence type="fractalNoise" baseFrequency="0.005" numOctaves="2" result="fluid-noise" />
+          <feGaussianBlur in="fluid-noise" stdDeviation="3" result="blurred-noise" />
+          <feDisplacementMap in="SourceGraphic" in2="blurred-noise" scale="20" xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
+    <div id="root"></div>
+  </body>
+</html>
